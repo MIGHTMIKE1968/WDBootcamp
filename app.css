@@ -1,11 +1,19 @@
 h1 {
   color: purple;
+  border: 3px solid rgb(10, 2, 77);
 }
 
 h4 {
-  color: green;
+  color: white;
+  background-color: rgb(204, 66, 2);
 }
 
 li {
   color: darkblue;
+}
+
+body {
+  background: url("https://pixabay.com/get/57e3d6434857ae14f6d1867dda2f377f1736dae34e507440762a78d4904bcc_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
