@@ -1,0 +1,13 @@
+li {
+  border: 2px solid darkblue;
+}
+
+#special {
+  color: purple;
+  background-color: rgb(250, 240, 50);
+}
+
+.done {
+  background-color: rgb(250, 199, 87);
+  text-decoration: line-through;
+}
