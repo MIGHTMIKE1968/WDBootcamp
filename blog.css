@@ -1,0 +1,78 @@
+body {
+    margin: 50px auto;
+    border: 20px solid rgb(170, 171, 173);
+    width: 60%;
+}
+
+h2 {
+    font-family: Source Sans Pro;
+    text-align: left;
+    margin: 20px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: rgb(39, 123, 227);
+}
+
+h1 {
+   font-family: Source Sans Pro;
+   text-align: left;
+   margin-left: 20px;
+   color: rgb(19, 2, 179); 
+}
+
+h1:hover {
+    color: rgb(255, 5, 5);
+}
+
+p {
+   font-family: Source Sans Pro;
+   text-align: left;
+   margin: 20px;
+}
+
+p:nth-of-type(1) {
+   padding-left: 6px;    
+}
+
+p:nth-of-type(4) {
+   padding-left: 6px;    
+}
+
+p:nth-of-type(7) {
+   padding-left: 6px;    
+}
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 0 20px 0 20px;
+}
+
+.vertical {
+    border-left: 6px solid rgb(118, 4, 217);
+}
+
+span {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: rgb(212, 2, 2);
+}
+
+.fa-basketball-ball {
+    color: rgb(212, 99, 13);
+}
+
+.fa-football-ball {
+    color: rgb(82, 45, 17);
+}
+
+
+
+
+
+
+
+
+
