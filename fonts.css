@@ -1,15 +1,15 @@
 /*font-family*/
 
 p {
-    font-family: Arial;
+    font-family: Raleway;
     font-size: 2.0em;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.5;
     text-align: left;
 }
 
 h1 {
-    font-family: Georgia;
+    font-family: Indie Flower;
     font-size: 5.0em;
     text-align: center;
     text-decoration: underline;
