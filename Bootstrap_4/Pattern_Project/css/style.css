@@ -1,0 +1,14 @@
+body {
+    padding-bottom: 30px;
+}
+
+#header {
+    background-image: url("../img/header.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand:hover {
+    color: rgb(203, 203, 247) !important;
+}
