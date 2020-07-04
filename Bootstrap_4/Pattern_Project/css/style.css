@@ -12,3 +12,8 @@ body {
 .navbar-brand:hover {
     color: rgb(203, 203, 247) !important;
 }
+
+.card-title {
+    font-size: 2rem;
+    color: rgb(33, 4, 99);
+}
