@@ -73,6 +73,83 @@ amount = (z) => {
 
 amount(9);
 
+function multiply(y) {
+    return y * y;
+}
+
+multiply(12);
+
+place = (p) => {
+    return p;
+}
+
+place("Puerto Plata");
+
+
+function test(x,y) {
+    return y - x;
+}
+
+test(10, 40);
+
+test2 = (x) => {
+    return x * 2;
+    console.log(x);
+    return x / 2
+}
+
+test2(50);
+
+
+
+// ***** FUNCTION PROBLEM SET *****
+function isEven(i) {
+    // return true if number is even
+    if (i % 2 === 0) {
+        return true;
+    // else return false
+    } else {
+        return false;
+    }  
+}
+
+isEven(88);
+
+
+function factorial(num) {
+    // Define a result variable
+    let result = 1;
+    // Calculate factorial and store value in result
+    for(let i = 2; i <= num; i++) {
+        result *= i;    
+    }
+    // Return the result variable
+    return result;
+}
+
+
+function kebabToSnake() {
+    // Replace all '-' with '_'
+    // Return str4
+    let str1 = "Hello-World";
+    let str2 = str1.replace(/-/g, "_");
+    
+    let str3 = "Cats-Are-Beautiful";
+    let str4 = str3.replace(/-/g, "_");
+        return str4;
+    
+    let str5 = "puerto plata";
+    let str6 = str5.replace(/p/g, "P");
+    
+    //console.log(str2);
+    //console.log(str4);
+    //console.log(str6);
+}
+
+kebabToSnake();
+
+
+
 
 
 
