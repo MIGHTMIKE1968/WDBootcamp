@@ -1,3 +1,5 @@
+/*
+
 // Functions
 
 function sayHi() {
@@ -147,6 +149,39 @@ function kebabToSnake() {
 }
 
 kebabToSnake();
+
+*/
+
+// JS Scope
+// Scope is the context that code is executed in
+var num = 8;
+function doMath() {
+    num += 1;
+    if (num % 5 == 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+num += 1;
+doMath()
+
+// Higher Order Functions
+// Passing functions to other functions
+
+//function sing() {
+    //console.log("turn the beat around..");
+    //console.log("love to hear percusion..");
+//}
+
+//setInterval(sing, 5000);
+
+// Anonymous function
+setInterval(function() {
+    console.log("I am an anonymous function!");
+    console.log("THIS IS AWESOME!!");
+}, 5000);
 
 
 
