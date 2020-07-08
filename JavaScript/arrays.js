@@ -59,6 +59,15 @@ let evilOnes = villians.slice();
 
 console.log(`Of all Spider-Man's foes, ${evilOnes[4]} is arguably the most dangerous.`);
 
+// Nested arrays
+let places = [
+    ["St. Louis", "Chicago", "Atlanta"],
+    ["Paris", "Londan", "Madrid"],
+    ["Santiago", "Puerto Plata", "Santo Domingo"]
+]
+
+console.log(`${places[1] [2]} is a very beautiful city.`);
+
 
 
 
