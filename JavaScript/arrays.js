@@ -68,6 +68,64 @@ let places = [
 
 console.log(`${places[1] [2]} is a very beautiful city.`);
 
+//**** Array Iteration ****
+let teams = ["Rams", "Tigers", "Cardinals", "Blues"];
+
+for(let i = 0; i < teams.length; i++) {
+    console.log(teams[i]);
+}
+
+//For Each
+let aunts = ["May", "Barbara", "Helen", "Celeste"];
+
+aunts.forEach(function(aunt) {
+    console.log(aunt)
+});
+
+let planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+planets.forEach(function(planet) {
+    console.log(planet);
+});
+
+let iceCream = ["Chocolate", "Butter Pecan", "Cherry Vanilla"];
+
+iceCream.forEach(function(flavors) {
+    console.log(`I love ${flavors} ice cream.`);
+});
+
+function listFlavors(flavors) {
+    console.log("**********");
+    console.log(flavors);
+    console.log("**********");
+}
+
+iceCream.forEach(listFlavors);
+
+
+let numbers = [1,2,3,4,5,6,7,8,9,10,11,12];
+let colors = ["red", "orange", "yellow", "green"];
+
+numbers.forEach(function(color) {
+  if(color % 3 === 0) {
+    console.log(color);
+  }               
+});
+
+
+for(let color = 1; color <= numbers.length; color++) {
+    if(color % 3 === 0) {
+      console.log(color);
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
