@@ -138,7 +138,6 @@ let str = "ahceclvlxo"
 for(let i = 1; i < str.length; i+=2) {
     console.log(str[i]);
 }
-*/
 
 // **** FOR LOOPS PROBLEM SET
 //1. Print all numbers between -10 and 19
@@ -168,6 +167,62 @@ for(let i = 5; i <= 50; i++) {
         console.log(i);
     }
 }
+*/
+
+// For Each
+
+let nums = [14, 38, 57, 90, 16];
+
+nums.forEach(function(num) {
+    console.log(num);
+}); 
+
+function myForEach(arr, func) {
+    // loop through array
+    for(let i = 0; i < arr.length; i++) {
+        // call func each time in array
+        func();
+    }
+}
+
+let food = ["chile", "pizza", "chicken"];
+
+myForEach(food, alert);
+
+
+function myForEach(arr, func) {
+    // loop through array
+    for(let i = 0; i < arr.length; i++) {
+        // call func each time in array
+        func(arr[i]);
+    }
+}
+
+
+myForEach(food, function() {alert("Hola!")})
+
+myForEach(food, function(foods) {
+    console.log(foods);
+});
+
+Array.prototype.myForEach = function() {
+    for(let i = 0; i < this.lenght; i++) {
+        func(this[i]);
+    }
+}
+
+
+let buddies = ["Jerome", "Marvin", "Bootsy", "Glenn"];
+
+buddies.myForEach(function(name) {
+    console.log(`I love ${name}.`);
+});
+    
+
+    
+
+              
+
 
 
 
