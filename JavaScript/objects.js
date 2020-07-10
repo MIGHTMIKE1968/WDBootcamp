@@ -33,4 +33,68 @@ person.name = "Kelly";
 person.zodiac = "Scorpio";
 
 console.log(`${person.name} at times can be a very stubborn ${person.zodiac}.`);
-console.log(`My girl ${person.name} is a drop dead beautiful, ${person.eyes} eyed ${person.zodiac}.`)
+console.log(`My girl ${person.name} is a drop dead beautiful, ${person.eyes} eyed ${person.zodiac}.`);
+
+
+// Object Nesting
+
+var someThing = {
+    roster: [
+        {player: "Dr. J."},
+        {player: "Moses Malone"},
+        {player: "Andrew Toney"},
+        {player: "Marc Ivaroni"},
+        {player: "Mo Cheeks"}
+    
+    ],
+    name: "Philadelphia 76ers",
+    colors: "red, white and blue",
+    coach: "Billy Cunningham",
+    worldChamps: true
+};
+
+console.log(`${someThing.roster[0].player} was the star of the 1982-83 ${someThing.name}.`);
+console.log(`However, ${someThing.roster[1].player} was the team's best player.`);
+console.log(`${someThing.coach} was the head coach of the ${someThing.name}.`);
+console.log(`The 76ers team colors are ${someThing.colors}.`);
+console.log(`The 76ers won an NBA title in 1983. ${someThing.worldChamps}`);
+
+
+/*
+var someObject = {};
+    someObject._name = "Hedwig",
+    someObject.age = 6;
+
+var prop = "color"
+    someObject["prop"] = "red";
+
+
+console.log(someObject._name);
+console.log(someObject.age);
+console.log(someObject["prop"]);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
