@@ -75,6 +75,36 @@ console.log(someObject["prop"]);
 */
 
 
+// Methods
+let obj = {
+    name: "Paula",
+    age: 26,
+    isPretty: true,
+    parents: ["John", "Jessica"],
+    add: function(a,b) {
+        return a + b;
+    }
+}
+
+let micaelJ = {};
+
+micaelJ.speak = function() {
+    return "Beat It!";
+}
+
+let prince = {};
+
+prince.speak = function() {
+    return "Purple Rain, Purple Rain!";
+}
+
+
+
+
+
+
+
+
 
 
 
