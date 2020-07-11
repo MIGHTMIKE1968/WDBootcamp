@@ -98,7 +98,25 @@ prince.speak = function() {
     return "Purple Rain, Purple Rain!";
 }
 
+// This Keyword
 
+let comments = {};
+
+comments.data = ["We need a new manager!", "I love Yadi!", "We need more offense."];
+
+function print(arr) {
+    arr.forEach(function(el) {
+        console.log(el);
+    })
+}
+
+print(comments.data);
+
+comments.print = function() {
+    this.data.forEach(function(el) {
+        console.log(el);
+    });
+}
 
 
 
