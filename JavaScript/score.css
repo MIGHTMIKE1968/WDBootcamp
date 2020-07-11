@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.winner {
+    color: darkgreen;
+    text-decoration: line-through; 
+}
+
+.winner2 {
+    color: red;
+    text-decoration: line-through;
+}
