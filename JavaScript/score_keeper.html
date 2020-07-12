@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 <title>Score Keeper Project</title>
     <link rel="stylesheet" type="text/css" href="score.css">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Muli:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+    <h1><span id="p1Display" class="numbers">0</span> <span class="to">to</span> <span id="p2Display" class="numbers">0</span></h1>
     
     <p>PLAYING TO: <span>10</span></p>
     
     <input type="number">
-    <button id="p1">Player One</button>
-    <button id="p2">Player Two</button>
-    <button id="reset">Reset</button>
+    <button class="one" id="p1">Player One</button>
+    <button class="two" id="p2">Player Two</button>
+    <button class="new" id="reset">Reset</button>
     
     <script src="score.js"></script>
 </body>

@@ -54,7 +54,7 @@ numInput.addEventListener("change", function() {
     reset();
 });
 
-
+winningScoreDisplay.style.color = "rgb(227, 2, 2)";
 
 
 

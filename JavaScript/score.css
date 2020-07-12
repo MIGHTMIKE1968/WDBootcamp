@@ -1,6 +1,21 @@
 body {
     text-align: center;
     margin-top: 200px;
+    font-family: Muli;
+}
+
+.numbers {
+    font-size: 6rem;
+}
+
+.to {
+    font-size: 2.5rem;
+    font-style: oblique;
+    color: rgb(227, 2, 2);
+}
+
+p {
+    font-size: 2.5rem;
 }
 
 .winner {
@@ -11,4 +26,33 @@ body {
 .winner2 {
     color: red;
     text-decoration: line-through;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    font-size: 1.1rem;
+}
+
+.one {
+    background: rgb(227, 2, 2);
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+.two {
+    background: darkblue;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+.new {
+    background: purple;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 13.75px 11px 13.75px 11px;
+    margin-right: 5px;
 }
