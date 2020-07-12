@@ -1,0 +1,9 @@
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.select1 {
+    color: green;
+}
+
