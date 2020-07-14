@@ -82,6 +82,29 @@ $("input").keypress(function(event) {
 });
 
 
+//.on
+$("p").on("click", function() {
+    $(this).css("color", "green");
+});
+
+$("p").css({
+    fontSize: "1.4rem",
+    fontStyle: "oblique"
+});
+
+$("input").on("keypress", function() {
+    console.log("A key was pressed.");
+});
+
+$("button").on("mouseenter", function() {
+    $(this).css("font-weight", "bold");
+});
+
+$("button").on("mouseleave", function() {
+    $(this).css("font-weight", "normal");
+});
+
+
 
 
 
