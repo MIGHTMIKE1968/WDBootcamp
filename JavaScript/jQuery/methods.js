@@ -45,4 +45,39 @@ $("li").removeClass("wrong");
 // .toggleClass
 $("li").first().toggleClass("done");
 
+//.click()
+$("button").first().click(function() {
+    alert("The button was clicked!");
+});
+
+$("button").css({
+    padding: "10px 20px",
+    margin: "0 10px 20px 0",
+    textTransform: "uppercase",
+    backgroundColor: "darkblue",
+    color: "white",
+    fontSize: "1.4rem",
+    height: "100%",
+    outline: "none"
+});
+
+$("#push").click(function(){
+    alert("You push it real good!");
+});
+
+$("h1").click(function() {
+    alert("You are learning jQuery my friend!");
+});
+
+$("h2").click(function(){
+    $(this).css("backgroundColor", "rgb(255, 224, 250)");
+});
+
+
+
+
+
+
+
+
 
