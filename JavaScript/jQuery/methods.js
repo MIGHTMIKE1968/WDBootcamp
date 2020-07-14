@@ -31,7 +31,7 @@ $("img").css("marginBottom", "20px");
 
 
 //.val()
-$("input").val("Michael Dodson");
+//$("input").val("Michael Dodson");
 
 
 // Adding a css class - .addClass()
@@ -71,6 +71,14 @@ $("h1").click(function() {
 
 $("h2").click(function(){
     $(this).css("backgroundColor", "rgb(255, 224, 250)");
+});
+
+//.keypress()
+$("input").keypress(function(event) {
+    if(event.which === 13) {
+        alert("YOU HIT ENTER!");
+    }
+    //console.log(event);
 });
 
 
