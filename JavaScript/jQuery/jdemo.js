@@ -1,3 +1,4 @@
+/*
 let style1 = {
     color: "darkblue",
     backgroundColor: "yellow",
@@ -23,3 +24,41 @@ let bod = {
 }
 
 $("body").css(bod)
+*/
+
+
+// Give all divs the same color backgound, font size, font, margin and padding.
+let divide = {
+    backgroundColor: "rgb(247, 231, 225)",
+    fontFamily: "Roboto",
+    fontSize: "2rem",
+    margin: "0 30px",
+    padding: "15px"
+}
+
+$("div").css(divide)
+
+
+// Give the divs with a class of highlight a width of 200px.
+$(".highlight").css("width", "200px")
+
+
+// Give the id of third an orange border.
+$("#third").css("border", "1.5px solid orange")
+
+// Make the div with the id of first all caps. Change its color and give it a border
+$("#first").css({
+    textTransform: "uppercase",
+    color: "rgb(79, 16, 115)",
+    border: "1.5px solid rgb(79, 16, 115)"
+})
+
+let body = {
+    margin: "30px 0"
+}
+
+$("body").css(body)
+
+
+
+
