@@ -1,13 +1,17 @@
+body {
+    font-family: Roboto;
+    background: #83a4d4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, #b6fbff, #83a4d4);
+    background: -o-linear-gradient(left, #b6fbff, #83a4d4);
+    background: linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 #container {
     box-shadow: 0 0 3px rgb(0,0,0 0.1);
     width: 600px;
     margin: 100px auto;
     background-color: #f7f7f7;
-}
-
-.completed {
-    color: gray;
-    text-decoration: line-through;
 }
 
 h1 {
@@ -18,32 +22,6 @@ h1 {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
-}
-
-ul {
-     list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Roboto;
-    background: #83a4d4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(left, #b6fbff, #83a4d4);
-    background: -o-linear-gradient(left, #b6fbff, #83a4d4);
-    background: linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-li { 
-    background-color: #fff;
-    height: 40px;
-    line-height: 40px;
-    color: rgb(44, 44, 46);
-}
-
-li:nth-child(2n) {
-   background-color: #f7f7f7; 
 }
 
 input {
@@ -66,7 +44,29 @@ input:focus {
     float: right;
 }
 
-span {
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li { 
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(44, 44, 46);
+}
+
+li:nth-child(2n) {
+   background-color: #f7f7f7; 
+}
+
+li span {
     background-color: rgb(245, 0, 16);
     height: 40px;
     margin-right: 20px;
