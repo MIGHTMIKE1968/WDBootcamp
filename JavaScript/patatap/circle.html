@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Circles</title>
+    <!-- Load latest acron version first -->
+    <script type="text/javascript" src="https://unpkg.com/acorn"></script>
+    <script type="text/javascript" src="paper-full.js"></script>
+    <link rel="stylesheet" type="text/css" href="circles.css">
+    
+    <script type="text/paperscript" canvas="myCanvas">
+	// Create a Paper.js Path to draw a line into it:
+	let path = new Path();
+	// Give the stroke a color
+	path.strokeColor = 'red';
+	let start = new Point(50, 100);
+	// Move to start and draw a line from there
+	path.moveTo(start);
+	// Note the plus operator on Point objects.
+	// PaperScript does that for us, and much more!
+	path.lineTo(start + [ 500, -50 ]);
+    
+    let myCircle = new Path.Circle(new Point(50, 70), 50);
+    myCircle.fillColor = 'purple';
+    
+    let newCircle = new Path.Circle(new Point(50, 70), 150);
+    newCircle.fillColor = 'orange';
+</script>
+</head>
+
+<body>
+    
+    
+    
+    <canvas id="myCanvas" resize></canvas>
+</body>
+</html>
