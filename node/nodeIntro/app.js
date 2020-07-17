@@ -42,4 +42,19 @@ adios("Adios Amigo!!", 2);
 adios("Get out!!", 4);
 
 
+// Write a function the gets the average of the numbers in the "scores" array
+let scores = [90, 98, 89, 100, 100, 86, 94];
+
+function average(scores) {
+    let total = 0;
+    scores.forEach(function(score) {
+        total += score;
+    });
+    let avg = total/scores.length;
+    return Math.round(avg);
+}
+
+console.log(average(scores));
+
+
 
