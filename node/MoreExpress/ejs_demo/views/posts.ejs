@@ -1,0 +1,13 @@
+<h1>The Posts Page</h1>
+
+<% for(let i = 0; i < posts.length; i++) { %>
+  <li>
+    <%= posts[i].title.toUpperCase() %> - <strong><em><%= posts[i].author %></em></strong>
+  </li>
+<% } %>
+
+<% posts.forEach(function(post) { %>
+  <li>
+    <%= post.title.toUpperCase() %> - <strong><em><%= post.author %></em></strong>
+  </li>
+<% }) %>
