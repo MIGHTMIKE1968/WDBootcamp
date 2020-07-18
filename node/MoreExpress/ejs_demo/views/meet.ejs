@@ -1,3 +1,5 @@
+<%- include("partials/header")%>
+
 <h1>Meet our animal friend: <%= thingVar.toUpperCase() %>!</h1>
 
 <% if(thingVar.toLowerCase() === "tigra") { %>
@@ -7,3 +9,5 @@
 <% } %>
 
 <p>This is the meet.ejs file.</p>
+
+<%- include("partials/footer")%>

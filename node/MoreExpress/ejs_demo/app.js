@@ -1,13 +1,16 @@
 const express = require('express');
 const app = express();
 
+app.use(express.static("public"));
+app.set("view engine", "ejs");
+
 app.get("/", function(req, res) {
-  res.render('home.ejs');
+  res.render('home');
 });
 
 app.get("/meet/:thing", function(req, res) {
   let thing = req.params.thing;
-  res.render('meet.ejs', {thingVar: thing});
+  res.render('meet', {thingVar: thing});
 });
 
 app.get("/posts", function(req, res) {
@@ -17,7 +20,7 @@ app.get("/posts", function(req, res) {
       {title: "How To Be A Good Hero", author: "by The Tick"}
   ];
 
-  res.render('posts.ejs', {posts: posts});
+  res.render('posts', {posts: posts});
 });
 
 app.get("*", function(req, res) {
