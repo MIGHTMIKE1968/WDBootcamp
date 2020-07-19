@@ -2,9 +2,10 @@
   "name": "apis",
   "version": "1.0.0",
   "description": "",
-  "main": "firstr.js",
+  "main": "movie.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon movie.js"
   },
   "author": "Mike",
   "license": "ISC",
