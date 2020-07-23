@@ -112,6 +112,19 @@ app.put("/blogs/:id", function(req, res) {
     });
 });
 
+// DESTROY ROUTE
+app.delete("/blogs/:id", function(req, res) {
+    //DESTROY
+    //res.send("Destroy!");
+    Blog.findByIdAndDelete(req.params.id, function(err) {
+        if(err) {
+          res.redirect("/blogs");
+        } else {
+          res.redirect("/blogs");
+        }
+    });
+
+});
 
 console.log("The Blog App Has Started!");
 app.listen(3000);
