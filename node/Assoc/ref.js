@@ -7,30 +7,13 @@ mongoose.connect('mongodb://localhost:27017/blog_demo_2', {
 .then(() => console.log('Connected to DB!'))
 .catch(error => console.log(error.message));
 
-// POST - title, content
-let postSchema = new mongoose.Schema({
-  title: String,
-  content: String
-});
-const Post = mongoose.model("Post", postSchema);
+const Post = require("./models/post");
+const User = require("./models/user");
 
-// USER - email, name
-let userSchema = new mongoose.Schema({
-  email: String,
-  name: String,
-  posts: [
-      {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "Post"
-      }
-  ]
-});
-const User = mongoose.model("User", userSchema);
 
-/*
 Post.create({
-  title: "How to practice Tai Chi - Breathing Exercises",
-  content: "Tai Chi is a gentle martial art that promotes a healthy mind and body."
+  title: "How to practice Tai Chi - Stances",
+  content: "Proper stances are an important part of Tai Chi."
 }, function(err, post) {
     User.findOne({email: "james@funklords.com"}, function(err, foundUser) {
         if(err) {
@@ -47,8 +30,8 @@ Post.create({
         }
     });
 });
-*/
 
+/*
 // Find user
 // Find all posts for that user
 
