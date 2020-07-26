@@ -43,7 +43,6 @@ let aunt = {
 console.log(aunt.relative());
 
 // Using the call() method
-
 let character = {
     first: "Harry",
     last : "Potter",
@@ -60,6 +59,22 @@ let character2 = {
 character.completeName()
 character.completeName.call(character2); // Severus Snape
 
+
+// Using the apply() method
+let place = {
+    vacation: function() {
+        return "I love visiting " + this.town + "!";
+    }
+}
+
+let place1 = {
+    town: "Puerto Plata"
+}
+
+let place2 = {
+    town: "Santiago"
+}
+place.vacation.apply(place2);
 
 
 
