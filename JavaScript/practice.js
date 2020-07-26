@@ -42,6 +42,26 @@ let aunt = {
 
 console.log(aunt.relative());
 
+// Using the call() method
+
+let character = {
+    first: "Harry",
+    last : "Potter",
+    completeName: function() {
+        return this.first + " " + this.last;
+    }
+}
+
+let character2 = {
+    first: "Severus",
+    last: "Snape"
+}
+
+character.completeName()
+character.completeName.call(character2); // Severus Snape
+
+
+
 
 
 
